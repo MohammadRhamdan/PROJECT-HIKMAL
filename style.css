@@ -66,7 +66,7 @@ body{
     font-size: 40px;
     font-family: "Great Vibes",sans-serif;
     font-weight: 100;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     line-height: 25px;
 }
@@ -74,7 +74,7 @@ body{
     font-size: 35px;
     font-family: "Raleway",sans-serif;
     font-weight: 700;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     line-height: 50px;
 }
@@ -82,7 +82,7 @@ body{
     font-size: 14px;
     font-family: "Raleway",sans-serif;
     font-weight: 100;
-    color: white;
+    color: black;
     letter-spacing: 2px;
     line-height: 25px;
     margin-bottom: 30px;
@@ -91,10 +91,10 @@ body{
     font-size: 18px;
     font-family: "Arial",sans-serif;
     font-weight: 500;
-    color: white;
+    color: black;
     background: none;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 3px;
     outline: none;
     cursor: pointer;
