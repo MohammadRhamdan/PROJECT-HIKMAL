@@ -1,0 +1,339 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0,.2);
+    justify-content: space-between;
+}
+.navbar .logo{
+    font-size: 25px;
+    font-weight: 400;
+}
+.navbar-menu a{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px 15px;
+    color: black;
+    border-radius: 15px;
+}
+.navbar-menu a:hover{
+    background: linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+}
+.navbar .icons div{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 20px;
+    margin: 0 5px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+.navbar .icons div:hover{
+    background: linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+}
+.welcome{
+    background: url(/IMG_20220517_005831.jpg) no-repeat;
+    margin: 20px 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
+}
+.welcome h2{
+    font-size: 40px;
+    font-family: "Great Vibes",sans-serif;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.welcome h1{
+    font-size: 35px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+.welcome p{
+    font-size: 14px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.welcome button{
+    font-size: 18px;
+    font-family: "Arial",sans-serif;
+    font-weight: 500;
+    color: white;
+    background: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.welcome button:hover{
+    background: white;
+    color: black;
+}
+.choose{
+    margin: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.choose h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.slides input{
+    display: none;
+}
+.gallery{
+    width: 810px;
+    height: 375px;
+    margin: 25px 0;
+}
+.slides{
+    width: 810px;
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.manual-btn{
+    background-color: #eee;
+    border: 2px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background: linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+.product h3{
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 10px;
+}
+.product {
+    font-family: 'Segoe UI',sans-serif;
+    width: 240px;
+    height: 345px;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: .4s;
+}
+.product:hover{
+    transform: translate(0px, -8px);
+    transition: .3s;
+}
+.product img{
+    width: 240px;
+    height: 160px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.product p{
+    font-size: 15px;
+    color: black;
+    padding: 0 2px;
+}
+.product h6{
+    font-size: 20px;
+    padding: 0 8px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.product button{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 28px;
+}
+.buy{
+    background: white;
+}
+.buy:hover{
+    background: linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+    transition: all .3s ease;
+}
+.cube{
+    background-image: linear-gradient(to right,rgba(33, 200, 246, 0.5),rgba(99,123,255,0.5)),url(/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 25px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cube h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.cube button{
+    font-family: "Raleway", sans-serif;
+    color:black;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 3px;
+    background: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.cube button:hover{
+    background: black;
+    color: white;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.info2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.card{
+    margin: 10px 50px;
+    text-align: center;
+}
+.collection img{
+    height: 430px;
+    display: block;
+    margin: 0 20px;
+}
+.collection h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.collection p{
+    font-size: 14px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 100;
+}
+.collection button{
+    background-color: #eee;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color: black;
+    margin: 15px 0;
+    padding: 5px 25px;
+    outline: none;
+    border: none;
+}
+.collection button:hover{
+    background:  linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.brand-icon{
+    margin: 20px 0;
+}
+.slideshow{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.slideshow button{
+    height: auto;
+    font-weight: bolder;
+    margin: 0 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.slideshow button:hover{
+    background:  linear-gradient(to right,rgba(33,200,246,0.8),rgba(99,123,255,0.8));
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:50px 20px ;
+    margin-top: 75px;
+}
